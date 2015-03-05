@@ -34,3 +34,24 @@ a {
 a:hover {
 	border: none;
 }
+
+.mainnav ul{
+	list-style-type: none;
+	margin-left: 0;
+	margin-bottom: 50px;
+
+}
+.mainnav li {
+	display: inline-block;
+}
+.mainnav a {
+	padding: 15px 25px;
+	border: none;
+	color: green;
+	background: #ccc;
+	border-radius: 6px;
+}
+.mainnav a:hover, .mainnav .active {
+	background-color: blue;
+	color: white;
+}
