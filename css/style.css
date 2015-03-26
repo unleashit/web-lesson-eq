@@ -1,12 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-	font-family: 'Source Sans Pro', arial, sans-serif;
+	font-family: georgia, serif;
 	font-size: 16px;
 	line-height: 23px;
 	color: #333;
 }
 h1 {
 	font-size: 30px;
-	text-transform: uppercase;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
@@ -38,6 +44,18 @@ strong {
 em {
 	font-style: italic;
 }
+input {
+	border: 1px solid black;
+	padding: 5px;
+	color: #555;
+}
+input[type="button"] {
+	text-transform: uppercase;
+	color: white;
+	font-weight: bold;
+	background: #4D9FC7;
+	padding: 3px;
+}
 
 .container {
 	max-width: 1000px;
@@ -50,15 +68,78 @@ em {
    height: 0; 
    clear: both;
 }
+.visually-hidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
 
 .masthead {
 	background: #E3F1F9;
+	padding: 25px 0;
 }
 .id {
 	float: left;
 	width: 50%;
+	padding-top: 20px;
 }
-.search-box {
+.id h1 {
+	margin-bottom: 10px;
+	font-size: 35px;
+	font-weight: normal;
+	color: #3A6C86;
+}
+.id p {
+	font-size: 13px;
+	color: #666;
+	font-weight: bold;
+}
+.signup {
 	float: right;
 	width: 50%;
+	background-color: #ADD6ED;
+	padding: 12px;
+}
+.signup p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 8px;
+}
+.signup input {
+	width: 180px;
+}
+.signup input[type="button"] {
+	width: auto;
+}
+.controls {
+	background-color: #000;
+}
+.mainnav {
+	float: left;
+	width: 65%;
+}
+.mainnav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.mainnav li {
+	display: inline-block;
+}
+.mainnav a {
+	display: inline-block;
+	font-family: sans-serif;
+	color: #fff;
+	padding: 14px;
+}
+.mainnav .active, .mainnav a:hover {
+	background: #059BD8;
+}
+.search {
+	float: right;
+	width: 35%;
+	padding-top: 12px
 }
