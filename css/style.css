@@ -7,7 +7,7 @@ html {
 
 body {
 	font-family: georgia, serif;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 23px;
 	color: #333;
 }
@@ -19,7 +19,6 @@ h1 {
 h2 {
 	font-size: 23px;
 	font-weight: bold;
-	margin-top: 32px;
 	margin-bottom: 15px;
 }
 p {
@@ -56,6 +55,10 @@ input[type="button"] {
 	background: #4D9FC7;
 	padding: 3px;
 }
+/*img {
+	max-width: 100%;
+	height: auto;
+}*/
 
 .container {
 	max-width: 1000px;
@@ -74,6 +77,22 @@ input[type="button"] {
   clip: rect(0 0 0 0); 
   height: 1px; width: 1px; 
   margin: -1px; padding: 0; border: 0; 
+}
+.btn {
+	font-weight: bold;
+	background-color: #666; 
+	padding: 6px 12px;
+	border: none;
+}
+.btn a {
+	color: white;
+	text-decoration: none;
+	border: none;
+	padding: 8px;
+	display: inline-block;
+}
+.btn-blue {
+	background-color: #1C5E82;
 }
 
 .masthead {
@@ -158,4 +177,33 @@ input[type="button"] {
 .search input[type="text"] {
 	background: #777;
 	color: #fff;
+}
+.row1 {
+	margin-top: 25px;
+}
+.calltoaction {
+	float: left;
+	background: #2684B7;
+	color: #fff;
+	padding: 24px;
+	max-width: 616px;
+}
+.calltoaction h2 {
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: normal;
+	margin-bottom: 34px;
+}
+.calltoaction p {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.calltoaction-image {
+	float: right;
+	width: 380px;
+}
+.calltoaction .btn {
+	float: right;
+
 }
